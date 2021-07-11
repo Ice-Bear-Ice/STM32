@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"button_fake\startup_stm32f103xb.o"
+"button_fake\main.o"
+"button_fake\stm32f1xx_it.o"
+"button_fake\stm32f1xx_hal_msp.o"
+"button_fake\stm32f1xx_hal_gpio_ex.o"
+"button_fake\stm32f1xx_hal_tim.o"
+"button_fake\stm32f1xx_hal_tim_ex.o"
+"button_fake\stm32f1xx_hal.o"
+"button_fake\stm32f1xx_hal_rcc.o"
+"button_fake\stm32f1xx_hal_rcc_ex.o"
+"button_fake\stm32f1xx_hal_gpio.o"
+"button_fake\stm32f1xx_hal_dma.o"
+"button_fake\stm32f1xx_hal_cortex.o"
+"button_fake\stm32f1xx_hal_pwr.o"
+"button_fake\stm32f1xx_hal_flash.o"
+"button_fake\stm32f1xx_hal_flash_ex.o"
+"button_fake\stm32f1xx_hal_exti.o"
+"button_fake\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "Button_fake\Button_fake.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Button_fake.map" -o Button_fake\Button_fake.axf
